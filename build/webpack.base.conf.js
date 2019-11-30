@@ -1,3 +1,10 @@
+/*
+ * @Author: yangdan
+ * @Date: 2019-11-30 14:25:55
+ * @LastEditors: yangdan
+ * @LastEditTime: 2019-11-30 14:35:35
+ * @Description: 添加描述
+ */
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -13,7 +20,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: ['babel-polyfill', './src/main.js']
   },
   output: {
     path: config.build.assetsRoot,
