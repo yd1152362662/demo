@@ -2,12 +2,11 @@
  * @Author: yangdan
  * @Date: 2019-11-30 14:14:02
  * @LastEditors: yangdan
- * @LastEditTime: 2019-11-30 14:22:58
+ * @LastEditTime: 2019-11-30 15:24:26
  * @Description: 添加描述
  -->
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
     <router-view />
   </div>
 </template>
@@ -29,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
