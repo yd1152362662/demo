@@ -1,0 +1,61 @@
+.MyTable {
+  padding-top: 15px;
+}
+
+/* 弹窗 */
+.dialogTableVisible {
+  color: #333;
+  >>> ul {
+    padding-inline-start: 0;
+    list-style: none;
+    padding: 0 68px;
+    li span {
+      color: #666;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    li span:nth-of-type(1) {
+      display: inline-block;
+      width: 80px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  >>> .el-dialog {
+    border-radius: 10px;
+  }
+  >>> .el-dialog__title {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  >>> .el-dialog__body {
+    padding: 0;
+  }
+  >>> .dialog-footer {
+    button:nth-of-type(1) {
+      margin-right: 50px;
+    }
+  }
+}
+
+
+// 屏幕适配
+
+@media (width: 320px) {
+  /* 时间选择样式 */
+  .el-range-editor.el-input__inner {
+    width: 200px;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  /* 时间选择样式 */
+  .el-range-editor.el-input__inner {
+    width: 180px;
+  }
+
+  .el-select .el-input__inner,
+  .el-input {
+    width: 180px;
+  }
+}

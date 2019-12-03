@@ -1,0 +1,126 @@
+.container-box-border {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 3px 20px 0px rgba(51, 51, 51, 0.1);
+  border-radius: 17px;
+  .demo-form-inline {
+    margin: 40px 30px 20px 30px;
+  }
+  .item {
+    padding-right: 125px;
+  }
+  >>> .el-input {
+    width: 200px;
+  }
+  >>> .el-form--inline .el-form-item {
+    padding-left: 20px;
+    margin: 40px 0;
+  }
+  .weight >>> .el-input {
+    width: 90px;
+    margin-left: 20px;
+    input {
+      padding-left: 30px;
+    }
+  }
+  >>> .el-form-item__label {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+  }
+  >>> .el-form-item.is-required:not(.is-no-asterisk)
+    > .el-form-item__label:before,
+  .el-form-item.is-required:not(.is-no-asterisk)
+    .el-form-item__label-wrap
+    > .el-form-item__label:before {
+    content: "";
+  }
+  >>> .el-tag--plain.el-tag--info {
+    border-color: #cccc;
+    color: #333;
+    background: #fafafa;
+  }
+  >>> .el-tag--plain.el-tag--info .el-tag__close {
+    color: #666;
+  }
+  >>> .el-tag .el-icon-close {
+    font-weight: bolder;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 7px 0;
+  }
+}
+.Release-div {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 100px;
+  height: 40px;
+}
+.is-plain {
+  background-color: #fff;
+}
+.search-driver {
+  display: flex;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  align-items: center;
+  .serach-driver-div {
+    width: 264px;
+    margin-left: 30px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    justify-content: space-around;
+    .search-deriver-headimg {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-image: url("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2601842811,2779840951&fm=26&gp=0.jpg");
+      background-size: 40px 40px;
+    }
+  }
+}
+
+// 动画效果
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s;
+}
+.list-enter, .list-leave-to
+/* .list-leave-active for below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+// 屏幕适配
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .container-box-border {
+    >>> .el-input {
+      width: 145px;
+    }
+    >>> .el-form--inline .el-form-item {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1690px) {
+  .container-box-border {
+    >>> .el-input {
+      width: 140px;
+    }
+    >>> .el-form--inline .el-form-item {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+  }
+}
